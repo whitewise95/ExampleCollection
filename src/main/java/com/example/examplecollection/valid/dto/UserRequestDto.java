@@ -13,12 +13,14 @@ public class UserRequestDto {
     private String email;
 
     @NotBlank(groups = UserValidGroup.UserCreate.class, message = "패스워드는 공백만 있으면 안됩니다.")
+    @NotBlank // @valid 를 위한 어노테이션
     private String password;
 
     @NotNull(groups = { UserValidGroup.UserUpdate.class, UserValidGroup.UserCreate.class }, message = "name은 null이여서는 안됩니다.")
     private String name;
 
     @Min(groups = UserValidGroup.UserCreate.class, value = 19, message = "나이는 19세 이상만 가능합니다.")
+    @Min(value = 19)  // @valid 를 위한 어노테이션
     private int age;
 
     @Builder

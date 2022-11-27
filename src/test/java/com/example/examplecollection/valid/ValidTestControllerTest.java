@@ -50,7 +50,7 @@ public class ValidTestControllerTest {
 
             //when
             ResponseEntity response = restTemplate.postForEntity(
-                    "/validTest",
+                    "/v1/validTest",
                     stringHttpEntity,
                     Void.class
             );
@@ -75,7 +75,7 @@ public class ValidTestControllerTest {
 
             //when
             ResponseEntity response = restTemplate.postForEntity(
-                    "/validTest",
+                    "/v1/validTest",
                     stringHttpEntity,
                     Void.class
             );
@@ -100,7 +100,7 @@ public class ValidTestControllerTest {
 
             //when
             ResponseEntity response = restTemplate.postForEntity(
-                    "/validTest",
+                    "/v1/validTest",
                     stringHttpEntity,
                     Void.class
             );
@@ -132,7 +132,7 @@ public class ValidTestControllerTest {
 
             //when
             ResponseEntity response = restTemplate.postForEntity(
-                    "/userUpdateTest",
+                    "/v1/userUpdateTest",
                     stringHttpEntity,
                     Void.class
             );
@@ -156,7 +156,7 @@ public class ValidTestControllerTest {
 
             //when
             ResponseEntity response = restTemplate.postForEntity(
-                    "/userUpdateTest",
+                    "/v1/userUpdateTest",
                     stringHttpEntity,
                     Void.class
             );
@@ -179,7 +179,7 @@ public class ValidTestControllerTest {
 
             //when
             ResponseEntity response = restTemplate.postForEntity(
-                    "/userUpdateTest",
+                    "/v1/userUpdateTest",
                     stringHttpEntity,
                     Void.class
             );
