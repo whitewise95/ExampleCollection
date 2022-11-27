@@ -38,19 +38,6 @@ dependencies {
 
     // https://mvnrepository.com/artifact/org.springframework.restdocs/spring-restdocs-mockmvc
     testImplementation group: 'org.springframework.restdocs', name: 'spring-restdocs-mockmvc', version: '2.0.4.RELEASE'
-
-    /**
-     * 문자열, 배열 및 숫자 조작, 반영 및 동시성에서 쌍 및 트리플 (일반적으로 튜플 이라고 함)과 같은 여러 순서가 지정된 데이터 구조의 구현에 이르기까지 매우 풍부 합니다.
-     * https://mvnrepository.com/artifact/org.apache.commons/commons-lang3/3.12.0
-     * */
-    implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.12.0'
-
-    /*
-     * https://blog.outsider.ne.kr/710 사용이유
-     * https://mvnrepository.com/artifact/com.google.guava/guava
-     * */
-    implementation group: 'com.google.guava', name: 'guava', version: '31.1-jre'
-
 }
 
 tasks.named('test') {
